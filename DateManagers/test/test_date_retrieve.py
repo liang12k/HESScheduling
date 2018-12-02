@@ -16,11 +16,25 @@ class TestDateRetriever(unittest.TestCase):
     def setUp(self):
         self.month = 12
         self.year = 2018
-        self.drObj = DateRetriever(self.month, self.year)
+        self.selectDays = "T,TH,F"
+        self.drObjDefault = DateRetriever(self.month, self.year)
+        self.drObjSelDays = DateRetriever(self.month, self.year, self.selectDays)
 
-    def test_getAllDatesForMonth(self):
+    def test_parseSelectDays_no_selectDays_get_full_business_week(self):
+        expectedDays = ["M", "T", "W", "TH", "F"]
+        self.assertEqual(expectedDays, self.drObjDefault.parseSelectDays(""))
+
+    def test_parseSelectDays_entered_selectDays(self):
+        expectedDays = ["T", "TH", "F"]
+        self.assertEqual(expectedDays, self.drObjSelDays.parseSelectDays(self.selectDays))
+
+    def test_getAllDatesForMonth_no_selectDays(self):
         expectedTuple = EXPECTED_DEC2018
-        self.assertTupleEqual(expectedTuple, self.drObj.getAllDatesForMonth())
+        self.assertTupleEqual(expectedTuple, self.drObjDefault.getAllDatesForMonth())
+
+    def test_getAllDatesForMonth_with_selectDays(self):
+        expectedTuple = EXPECTED_DEC2018
+        self.assertTupleEqual(expectedTuple, self.drObjSelDays.getAllDatesForMonth())
 
 
 if __name__ == "__main__":
