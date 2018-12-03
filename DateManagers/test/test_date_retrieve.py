@@ -3,12 +3,8 @@ Description: tests date_retrieve
 """
 
 import unittest
-import datetime, calendar
 from DateManagers.date_retrieve import DateRetriever
-
-
-EXPECTED_DEC2018 = (datetime.datetime(2018, 12, 1, 0, 0), datetime.datetime(2018, 12, 2, 0, 0), datetime.datetime(
-    2018, 12, 3, 0, 0), datetime.datetime(2018, 12, 4, 0, 0), datetime.datetime(2018, 12, 5, 0, 0), datetime.datetime(2018, 12, 6, 0, 0), datetime.datetime(2018, 12, 7, 0, 0), datetime.datetime(2018, 12, 8, 0, 0), datetime.datetime(2018, 12, 9, 0, 0), datetime.datetime(2018, 12, 10, 0, 0), datetime.datetime(2018, 12, 11, 0, 0), datetime.datetime(2018, 12, 12, 0, 0), datetime.datetime(2018, 12, 13, 0, 0), datetime.datetime(2018, 12, 14, 0, 0), datetime.datetime(2018, 12, 15, 0, 0), datetime.datetime(2018, 12, 16, 0, 0), datetime.datetime(2018, 12, 17, 0, 0), datetime.datetime(2018, 12, 18, 0, 0), datetime.datetime(2018, 12, 19, 0, 0), datetime.datetime(2018, 12, 20, 0, 0), datetime.datetime(2018, 12, 21, 0, 0), datetime.datetime(2018, 12, 22, 0, 0), datetime.datetime(2018, 12, 23, 0, 0), datetime.datetime(2018, 12, 24, 0, 0), datetime.datetime(2018, 12, 25, 0, 0), datetime.datetime(2018, 12, 26, 0, 0), datetime.datetime(2018, 12, 27, 0, 0), datetime.datetime(2018, 12, 28, 0, 0), datetime.datetime(2018, 12, 29, 0, 0), datetime.datetime(2018, 12, 30, 0, 0), datetime.datetime(2018, 12, 31, 0, 0))
+from DateManagers.test.test_date_retrieve_constants import *
 
 
 class TestDateRetriever(unittest.TestCase):
@@ -28,13 +24,30 @@ class TestDateRetriever(unittest.TestCase):
         expectedDays = ["T", "TH", "F"]
         self.assertEqual(expectedDays, self.drObjSelDays.parseSelectDays(self.selectDays))
 
-    def test_getAllDatesForMonth_no_selectDays(self):
-        expectedTuple = EXPECTED_DEC2018
+    # ========== test DEC.2018 ==========================================
+    def test_getAllDatesForMonth_forDEC2018_no_selectDays(self):
+        expectedTuple = EXPECTED_DEC2018_DATES
         self.assertTupleEqual(expectedTuple, self.drObjDefault.getAllDatesForMonth())
 
-    def test_getAllDatesForMonth_with_selectDays(self):
-        expectedTuple = EXPECTED_DEC2018
+    def test_getAllDatesForMonth_forDEC2018_with_selectDays(self):
+        expectedTuple = EXPECTED_DEC2018_DATES
         self.assertTupleEqual(expectedTuple, self.drObjSelDays.getAllDatesForMonth())
+
+    def test_getSelectDaysAsInt_forDEC2018_no_selectDays(self):
+        expectedTuple = EXPECTED_ALL_WEEKDAYS
+        self.assertTupleEqual(expectedTuple, self.drObjDefault.getSelectDaysAsInt())
+
+    def test_getSelectDaysAsInt_forDEC2018_with_selectDays(self):
+        expectedTuple = EXPECTED_SELECT_WEEKDAYS
+        self.assertTupleEqual(expectedTuple, self.drObjSelDays.getSelectDaysAsInt())
+
+    def test_getDatesForSelectDays_forDEC2018_no_selectDays(self):
+        expectedTuple = EXPECTED_DEC2018_ALL_DATES_AND_WEEKDAYS
+        self.assertTupleEqual(expectedTuple, self.drObjDefault.getDatesForSelectDays())
+
+    def test_getDatesForSelectDays_forDEC2018_with_selectDays(self):
+        expectedTuple = EXPECTED_DEC2018_SELECT_DATES_AND_WEEKDAYS
+        self.assertTupleEqual(expectedTuple, self.drObjSelDays.getDatesForSelectDays())
 
 
 if __name__ == "__main__":
