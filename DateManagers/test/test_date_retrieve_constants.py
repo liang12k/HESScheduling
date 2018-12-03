@@ -21,5 +21,6 @@ EXPECTED_DEC2018_ALL_DATES_AND_WEEKDAYS = (((0, datetime.datetime(2018, 12, 3, 0
 )
 
 # select days T (1), TH (3), F (4)
-EXPECTED_DEC2018_SELECT_DATES_AND_WEEKDAYS = (((1, datetime.datetime(2018, 12, 4, 0, 0)), (3, datetime.datetime(2018, 12, 6, 0, 0)), (4, datetime.datetime(2018, 12, 7, 0, 0)), (1, datetime.datetime(2018, 12, 11, 0, 0)), (3, datetime.datetime(2018, 12, 13, 0, 0)), (4, datetime.datetime(2018, 12, 14, 0, 0)), (1, datetime.datetime(2018, 12, 18, 0, 0)), (3, datetime.datetime(2018, 12, 20, 0, 0)), (4, datetime.datetime(2018, 12, 21, 0, 0)), (1, datetime.datetime(2018, 12, 25, 0, 0)), (3, datetime.datetime(2018, 12, 27, 0, 0)), (4, datetime.datetime(2018, 12, 28, 0, 0)))
+EXPECTED_DEC2018_SELECT_DATES_AND_T_TH_F_WEEKDAYS = (((1, datetime.datetime(2018, 12, 4, 0, 0)), (3, datetime.datetime(
+    2018, 12, 6, 0, 0)), (4, datetime.datetime(2018, 12, 7, 0, 0)), (1, datetime.datetime(2018, 12, 11, 0, 0)), (3, datetime.datetime(2018, 12, 13, 0, 0)), (4, datetime.datetime(2018, 12, 14, 0, 0)), (1, datetime.datetime(2018, 12, 18, 0, 0)), (3, datetime.datetime(2018, 12, 20, 0, 0)), (4, datetime.datetime(2018, 12, 21, 0, 0)), (1, datetime.datetime(2018, 12, 25, 0, 0)), (3, datetime.datetime(2018, 12, 27, 0, 0)), (4, datetime.datetime(2018, 12, 28, 0, 0)))
 )

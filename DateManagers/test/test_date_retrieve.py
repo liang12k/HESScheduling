@@ -46,7 +46,7 @@ class TestDateRetriever(unittest.TestCase):
         self.assertTupleEqual(expectedTuple, self.drObjDefault.getDatesForSelectDays())
 
     def test_getDatesForSelectDays_forDEC2018_with_selectDays(self):
-        expectedTuple = EXPECTED_DEC2018_SELECT_DATES_AND_WEEKDAYS
+        expectedTuple = EXPECTED_DEC2018_SELECT_DATES_AND_T_TH_F_WEEKDAYS
         self.assertTupleEqual(expectedTuple, self.drObjSelDays.getDatesForSelectDays())
 
 

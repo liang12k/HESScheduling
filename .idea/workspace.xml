@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="464fa40a-d625-4e79-b45a-40291c96f970" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/StudentManager/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StudentManager/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentManager/student_info.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentManager/test/test_student_info.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentManager/test/test_student_info_constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DateManagers/date_retrieve.py" beforeDir="false" afterPath="$PROJECT_DIR$/DateManagers/date_retrieve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DateManagers/test/test_date_retrieve.py" beforeDir="false" afterPath="$PROJECT_DIR$/DateManagers/test/test_date_retrieve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,13 +31,25 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/DateManagers/date_retrieve.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3">
-                  <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+                <state relative-caret-position="238">
+                  <caret line="14" column="19" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="19" />
                   <folding>
                     <element signature="e#90#115#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/StudentManager/student_info.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="156">
+                  <caret line="18" column="30" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#50#64#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -45,11 +59,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+                <state relative-caret-position="133">
+                  <caret line="48" column="73" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
                   <folding>
                     <element signature="e#42#57#0" expanded="true" />
                   </folding>
@@ -57,11 +71,32 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/StudentManager/test/test_student_info.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="157">
+                  <caret line="22" column="95" lean-forward="true" selection-start-line="22" selection-start-column="95" selection-end-line="22" selection-end-column="95" />
+                  <folding>
+                    <element signature="e#40#55#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/StudentManager/test/test_student_info_constants.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="5" column="149" selection-start-line="5" selection-start-column="149" selection-end-line="5" selection-end-column="149" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+                <state relative-caret-position="99">
+                  <caret line="23" column="49" selection-start-line="23" selection-end-line="23" selection-end-column="49" />
                 </state>
               </provider>
             </entry>
@@ -84,9 +119,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py" />
-        <option value="$PROJECT_DIR$/DateManagers/test/test_date_retrieve.py" />
         <option value="$PROJECT_DIR$/DateManagers/date_retrieve.py" />
+        <option value="$PROJECT_DIR$/StudentManager/student_info.py" />
+        <option value="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py" />
+        <option value="$PROJECT_DIR$/StudentManager/test/test_student_info_constants.py" />
+        <option value="$PROJECT_DIR$/DateManagers/test/test_date_retrieve.py" />
+        <option value="$PROJECT_DIR$/StudentManager/test/test_student_info.py" />
       </list>
     </option>
   </component>
@@ -142,7 +180,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -211,9 +249,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_date_retrieve_py - 2018.12.02 at 19h 04m 59s.xml">
-      <configuration name="Unittests in test_date_retrieve.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_date_retrieve_py - 2018.12.02 at 19h 10m 55s.xml">
       <configuration name="Unittests in test_date_retrieve.py" configurationId="tests" />
     </history-entry>
@@ -241,6 +276,9 @@
     <history-entry file="Unittests_in_test_date_retrieve_py - 2018.12.02 at 21h 28m 53s.xml">
       <configuration name="Unittests in test_date_retrieve.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_date_retrieve_py - 2018.12.02 at 21h 47m 45s.xml">
+      <configuration name="Unittests in test_date_retrieve.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -264,7 +302,7 @@
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.329927" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -307,35 +345,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StudentManager/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/DateManagers/test/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/DateManagers/date_retrieve.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="e#90#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentManager/student_info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="30" />
+          <folding>
+            <element signature="e#50#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="23" column="49" selection-start-line="23" selection-end-line="23" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentManager/test/test_student_info_constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="5" column="149" selection-start-line="5" selection-start-column="149" selection-end-line="5" selection-end-column="149" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+        <state relative-caret-position="133">
+          <caret line="48" column="73" selection-start-line="48" selection-start-column="73" selection-end-line="48" selection-end-column="73" />
           <folding>
             <element signature="e#42#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DateManagers/date_retrieve.py">
+    <entry file="file://$PROJECT_DIR$/StudentManager/test/test_student_info.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+        <state relative-caret-position="157">
+          <caret line="22" column="95" lean-forward="true" selection-start-line="22" selection-start-column="95" selection-end-line="22" selection-end-column="95" />
           <folding>
-            <element signature="e#90#115#0" expanded="true" />
+            <element signature="e#40#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
