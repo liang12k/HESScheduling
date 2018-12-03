@@ -24,20 +24,32 @@ class TestDec2018_StudentInfo(unittest.TestCase):
         # self.student3DefDays = StudentInfo(self.decMonth, self.year2018)
         # self.student3SelDays = StudentInfo(self.decMonth, self.year2018, self.selectDaysTTHF)
 
+    def test_getStudentName_nameOf_student1DefDays(self):
+        self.assertEqual(self.student1Name, self.student1DefDays.getStudentName())
+
+    def test_getStudentName_nameOf_student1SelDays(self):
+        self.assertEqual(self.student1Name, self.student1SelDays.getStudentName())
+
+    def test_getStudentName_nameOf_student2DefDays(self):
+        self.assertEqual(self.student2Name, self.student2DefDays.getStudentName())
+
+    def test_getStudentName_nameOf_student2SelDays(self):
+        self.assertEqual(self.student2Name, self.student2SelDays.getStudentName())
+
     def test_getSessionDaysAndDates_unspecified_sessionDates_for_student1DefDays(self):
-        expectedOutput = tuple(EXPECTED_DEC2018_ALL_DATES_AND_WEEKDAYS)
+        expectedOutput = EXPECTED_DEC2018_ALL_DATES_AND_WEEKDAYS
         self.assertTupleEqual(expectedOutput, self.student1DefDays.getSessionDaysAndDates())
 
     def test_getSessionDaysAndDates_specified_sessionDates_for_student1SelDays(self):
-        expectedOutput = tuple(EXPECTED_DEC2018_SELECT_DATES_AND_M_T_W_WEEKDAYS)
+        expectedOutput = EXPECTED_DEC2018_SELECT_DATES_AND_M_T_W_WEEKDAYS
         self.assertTupleEqual(expectedOutput, self.student1SelDays.getSessionDaysAndDates())
 
     def test_getSessionDaysAndDates_unspecified_sessionDates_for_student2DefDays(self):
-        expectedOutput = tuple(EXPECTED_DEC2018_ALL_DATES_AND_WEEKDAYS)
+        expectedOutput = EXPECTED_DEC2018_ALL_DATES_AND_WEEKDAYS
         self.assertTupleEqual(expectedOutput, self.student2DefDays.getSessionDaysAndDates())
 
     def test_getSessionDaysAndDates_specified_sessionDates_for_student2SelDays(self):
-        expectedOutput = tuple(EXPECTED_DEC2018_SELECT_DATES_AND_T_TH_F_WEEKDAYS)
+        expectedOutput = EXPECTED_DEC2018_SELECT_DATES_AND_T_TH_F_WEEKDAYS
         self.assertTupleEqual(expectedOutput, self.student2SelDays.getSessionDaysAndDates())
 
 

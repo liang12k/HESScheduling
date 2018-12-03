@@ -15,12 +15,17 @@ class StudentInfo(object):
         self.sessionDaysToParse = sessionDays
         self.sessionMonth = sessionMonth
         self.sessionYear = sessionYear
-        self.dateRetriever = DateRetriever(self.sessionMonth, self.sessionYear, self.sessionDaysToParse)
+        self.dateRetriever = DateRetriever(self.sessionMonth, self.sessionYear,
+                                           self.sessionDaysToParse)
 
     def getSessionDaysAndDates(self):
         sessionDayAndDates = self.dateRetriever.getDatesForSelectDays()
-        logging.info("For %s, session dates: \n %s", self.name, pformat(sessionDayAndDates))
+        logging.info("\t For student: '%s', session dates are: \n %s",
+                     self.getStudentName, pformat(sessionDayAndDates))
         return sessionDayAndDates
+
+    def getStudentName(self):
+        return self.name
 
 
 if __name__ == "__main__":
