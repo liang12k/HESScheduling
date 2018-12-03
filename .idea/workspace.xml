@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="464fa40a-d625-4e79-b45a-40291c96f970" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentManager/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StudentManager/test/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DateManagers/date_retrieve.py" beforeDir="false" afterPath="$PROJECT_DIR$/DateManagers/date_retrieve.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DateManagers/test/test_date_retrieve.py" beforeDir="false" afterPath="$PROJECT_DIR$/DateManagers/test/test_date_retrieve.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +32,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/DateManagers/date_retrieve.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="73">
-                  <caret line="41" column="26" lean-forward="true" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+                <state relative-caret-position="3">
+                  <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
                   <folding>
                     <element signature="e#90#115#0" expanded="true" />
                   </folding>
@@ -48,8 +48,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
-                  <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+                <state relative-caret-position="408">
+                  <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
                   <folding>
                     <element signature="e#42#57#0" expanded="true" />
                   </folding>
@@ -62,18 +62,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="136">
                   <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/DateManagers/date_retrieve.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="101">
-                  <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
-                  <folding>
-                    <element signature="e#90#115#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -96,9 +84,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/DateManagers/date_retrieve.py" />
         <option value="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py" />
         <option value="$PROJECT_DIR$/DateManagers/test/test_date_retrieve.py" />
+        <option value="$PROJECT_DIR$/DateManagers/date_retrieve.py" />
       </list>
     </option>
   </component>
@@ -138,7 +126,13 @@
             <path>
               <item name="HESScheduling" type="b2602c69:ProjectViewProjectNode" />
               <item name="HESScheduling" type="462c0819:PsiDirectoryNode" />
-              <item name="Runners" type="462c0819:PsiDirectoryNode" />
+              <item name="StudentManager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HESScheduling" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HESScheduling" type="462c0819:PsiDirectoryNode" />
+              <item name="StudentManager" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -160,10 +154,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/StudentManager/test" />
+      <recent name="$PROJECT_DIR$/StudentManager" />
       <recent name="$PROJECT_DIR$/Runners/test" />
       <recent name="$PROJECT_DIR$/Runners" />
       <recent name="$PROJECT_DIR$/DateManagers" />
-      <recent name="$PROJECT_DIR$/DateManagers/test" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -199,6 +194,9 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -213,18 +211,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_date_retrieve_py - 2018.12.02 at 18h 41m 44s.xml">
-      <configuration name="Unittests in test_date_retrieve.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_date_retrieve_py - 2018.12.02 at 18h 42m 07s.xml">
-      <configuration name="Unittests in test_date_retrieve.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_date_retrieve_py - 2018.12.02 at 18h 42m 47s.xml">
-      <configuration name="Unittests in test_date_retrieve.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_date_retrieve_py - 2018.12.02 at 18h 54m 24s.xml">
-      <configuration name="Unittests in test_date_retrieve.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_date_retrieve_py - 2018.12.02 at 19h 04m 59s.xml">
       <configuration name="Unittests in test_date_retrieve.py" configurationId="tests" />
     </history-entry>
@@ -243,6 +229,18 @@
     <history-entry file="Unittests_in_test_date_retrieve_py - 2018.12.02 at 19h 23m 52s.xml">
       <configuration name="Unittests in test_date_retrieve.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test_date_retrieve_py - 2018.12.02 at 21h 21m 48s.xml">
+      <configuration name="Unittests in test_date_retrieve.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_date_retrieve_py - 2018.12.02 at 21h 24m 50s.xml">
+      <configuration name="Unittests in test_date_retrieve.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_date_retrieve_py - 2018.12.02 at 21h 26m 14s.xml">
+      <configuration name="Unittests in test_date_retrieve.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_date_retrieve_py - 2018.12.02 at 21h 28m 53s.xml">
+      <configuration name="Unittests in test_date_retrieve.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -258,8 +256,8 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4978102" visible="true" weight="0.17737998" />
-      <window_info id="Structure" order="2" sideWeight="0.50218976" side_tool="true" weight="0.17737998" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49635038" visible="true" weight="0.14971521" />
+      <window_info id="Structure" order="2" sideWeight="0.50364965" side_tool="true" weight="0.15052888" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Python Console" order="1" weight="0.329927" />
       <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49950543" weight="0.329927" />
@@ -275,6 +273,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49635038" visible="true" weight="0.15052888" />
+      <window_info id="Structure" order="2" sideWeight="0.50364965" side_tool="true" visible="true" weight="0.15052888" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Python Console" order="1" weight="0.329927" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49950543" weight="0.329927" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.329927" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.50049454" side_tool="true" weight="0.329927" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/__init__.py">
@@ -297,22 +314,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DateManagers/date_retrieve.py">
+    <entry file="file://$PROJECT_DIR$/StudentManager/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DateManagers/test/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+        <state relative-caret-position="408">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
           <folding>
-            <element signature="e#90#115#0" expanded="true" />
+            <element signature="e#42#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve.py">
+    <entry file="file://$PROJECT_DIR$/DateManagers/date_retrieve.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+        <state relative-caret-position="3">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
           <folding>
-            <element signature="e#42#57#0" expanded="true" />
+            <element signature="e#90#115#0" expanded="true" />
           </folding>
         </state>
       </provider>
