@@ -11,6 +11,10 @@ WEEKDAY_TO_INT = {
     "M" : 0, "T": 1, "W": 2, "TH": 3, "F": 4, "SAT": 5, "SUN": 6
 }
 
+INT_TO_WEEKDAY = {
+    0: "M", 1: "T", 2: "W", 3: "TH", 4: "F", 5: "SAT", 6: "SUN"
+}
+
 
 class DateRetriever(object):
     def __init__(self, month, year, selectDaysToParse=""):
@@ -36,7 +40,7 @@ class DateRetriever(object):
     def getAllDatesForMonth(self):
         allDates = calendar.monthrange(self.year, self.month)
         # idx 1 gets count of all the days; do +1 in range to make last day inclusive
-        allDates = tuple(datetime.datetime(self.year, self.month, d) for d in range(1, allDates[1] + 1))
+        allDates = tuple(datetime.date(self.year, self.month, d) for d in range(1, allDates[1] + 1))
         logging.info("\t there are %d days for month %d, year %d \n",
                      len(allDates), self.month, self.year)
         return allDates

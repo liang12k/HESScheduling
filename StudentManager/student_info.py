@@ -3,6 +3,7 @@ Description: student name and their info
 """
 
 import logging
+from pprint import pprint, pformat
 from DateManagers.date_retrieve import DateRetriever
 
 logging.getLogger().setLevel(logging.INFO)
@@ -17,7 +18,9 @@ class StudentInfo(object):
         self.dateRetriever = DateRetriever(self.sessionMonth, self.sessionYear, self.sessionDaysToParse)
 
     def getSessionDaysAndDates(self):
-        pass
+        sessionDayAndDates = self.dateRetriever.getDatesForSelectDays()
+        logging.info("For %s, session dates: \n %s", self.name, pformat(sessionDayAndDates))
+        return sessionDayAndDates
 
 
 if __name__ == "__main__":
