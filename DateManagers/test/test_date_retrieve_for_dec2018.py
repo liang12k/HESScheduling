@@ -1,5 +1,5 @@
 """
-Description: tests date_retrieve
+Description: tests date_retrieve for Dec2018
 """
 
 import unittest

@@ -1,5 +1,5 @@
 """
-Description: test student_info
+Description: test student_info for Dec2018
 """
 
 import unittest
