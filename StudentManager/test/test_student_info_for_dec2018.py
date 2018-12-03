@@ -37,19 +37,19 @@ class TestDec2018_StudentInfo(unittest.TestCase):
         self.assertEqual(self.student2Name, self.student2SelDays.getStudentName())
 
     def test_getSessionDaysAndDates_unspecified_sessionDates_for_student1DefDays(self):
-        expectedOutput = EXPECTED_DEC2018_ALL_DATES_AND_WEEKDAYS
+        expectedOutput = EXPECTED_DEC2018_ALL_DATES_AND_WEEKDAYS_WKDAY_ABBREV
         self.assertTupleEqual(expectedOutput, self.student1DefDays.getSessionDaysAndDates())
 
     def test_getSessionDaysAndDates_specified_sessionDates_for_student1SelDays(self):
-        expectedOutput = EXPECTED_DEC2018_SELECT_DATES_AND_M_T_W_WEEKDAYS
+        expectedOutput = EXPECTED_DEC2018_SELECT_DATES_AND_M_T_W_WEEKDAYS_WKDAY_ABBREV
         self.assertTupleEqual(expectedOutput, self.student1SelDays.getSessionDaysAndDates())
 
     def test_getSessionDaysAndDates_unspecified_sessionDates_for_student2DefDays(self):
-        expectedOutput = EXPECTED_DEC2018_ALL_DATES_AND_WEEKDAYS
+        expectedOutput = EXPECTED_DEC2018_ALL_DATES_AND_WEEKDAYS_WKDAY_ABBREV
         self.assertTupleEqual(expectedOutput, self.student2DefDays.getSessionDaysAndDates())
 
     def test_getSessionDaysAndDates_specified_sessionDates_for_student2SelDays(self):
-        expectedOutput = EXPECTED_DEC2018_SELECT_DATES_AND_T_TH_F_WEEKDAYS
+        expectedOutput = EXPECTED_DEC2018_SELECT_DATES_AND_T_TH_F_WEEKDAYS_WKDAY_ABBREV
         self.assertTupleEqual(expectedOutput, self.student2SelDays.getSessionDaysAndDates())
 
 
