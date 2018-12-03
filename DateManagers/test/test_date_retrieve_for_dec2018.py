@@ -49,6 +49,20 @@ class TestDec2018_DateRetriever(unittest.TestCase):
         expectedTuple = EXPECTED_DEC2018_SELECT_DATES_AND_T_TH_F_WEEKDAYS
         self.assertTupleEqual(expectedTuple, self.drObjSelDays.getDatesForSelectDays())
 
+    def test_getDatesForSelectDaysInWeekdayAbbrev_forDEC2018_no_selectDays(self):
+        expectedTuple = EXPECTED_DEC2018_ALL_DATES_AND_WEEKDAYS_WKDAY_ABBREV
+        self.assertTupleEqual(
+            expectedTuple,
+            self.drObjDefault.getDatesForSelectDaysInWeekdayAbbrev())
+
+    def test_getDatesForSelectDaysInWeekdayAbbrev_forDEC2018_with_selectDays_T_TH_F(self):
+        expectedTuple = EXPECTED_DEC2018_SELECT_DATES_AND_T_TH_F_WEEKDAYS_WKDAY_ABBREV
+        self.assertTupleEqual(
+            expectedTuple,
+            self.drObjSelDays.getDatesForSelectDaysInWeekdayAbbrev()
+        )
+
+
 
 if __name__ == "__main__":
     unittest.main()

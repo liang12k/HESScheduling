@@ -52,6 +52,13 @@ class DateRetriever(object):
                      len(selectDates), self.month, self.year)
         return selectDates
 
+    def getDatesForSelectDaysInWeekdayAbbrev(self):
+        selectDatesUpdated = tuple((INT_TO_WEEKDAY[s[0]], s[1])
+                                   for s in self.getDatesForSelectDays())
+        logging.info("\t updated to readable weekday abbrv. for %d select days for month %d, year %d \n",
+                     len(selectDatesUpdated), self.month, self.year)
+        return selectDatesUpdated
+
 
 if __name__ == "__main__":
     pass
