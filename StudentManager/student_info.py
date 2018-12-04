@@ -20,8 +20,8 @@ class StudentInfo(object):
 
     def getSessionDaysAndDates(self):
         sessionDayAndDates = self.dateRetriever.getDatesForSelectDaysInWeekdayAbbrev()
-        logging.info("\t For student: '%s', session dates are: \n %s",
-                     self.getStudentName, pformat(sessionDayAndDates))
+        logging.info("\t For student(s): '%s', session dates are: \n %s",
+                     self.getStudentName(), pformat(sessionDayAndDates))
         return sessionDayAndDates
 
     def getStudentName(self):

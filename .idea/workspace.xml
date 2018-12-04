@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="464fa40a-d625-4e79-b45a-40291c96f970" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runners/studentinfo_date_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/Runners/studentinfo_date_store.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runners/test/test_studentinfo_date_store.py" beforeDir="false" afterPath="$PROJECT_DIR$/Runners/test/test_studentinfo_date_store.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StudentManager/student_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudentManager/student_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentManager/test/test_student_info_for_dec2018.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudentManager/test/test_student_info_for_dec2018.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,11 +32,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/StudentManager/student_info.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="156">
-                  <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
+                <state relative-caret-position="59">
+                  <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
                   <folding>
                     <element signature="e#50#64#0" expanded="true" />
                   </folding>
@@ -43,10 +45,22 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Runners/test/test_studentinfo_date_store.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="345">
+                  <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+                  <folding>
+                    <element signature="e#51#66#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Runners/studentinfo_date_store.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="173">
-                  <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+                <state relative-caret-position="126">
+                  <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
                   <folding>
                     <element signature="e#65#79#0" expanded="true" />
                   </folding>
@@ -54,11 +68,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="137">
-                  <caret line="153" column="182" selection-start-line="153" selection-start-column="182" selection-end-line="153" selection-end-column="182" />
+                <state relative-caret-position="76">
+                  <caret line="53" column="61" selection-start-line="53" selection-end-line="53" selection-end-column="61" />
                 </state>
               </provider>
             </entry>
@@ -66,8 +80,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_nov2018.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="88">
-                  <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="136" selection-end-column="19" />
+                <state relative-caret-position="102">
+                  <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="60" />
                 </state>
               </provider>
             </entry>
@@ -85,11 +99,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Runners/test/test_studentinfo_date_store.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="173">
-                  <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+                <state relative-caret-position="86">
+                  <caret line="86" column="93" selection-start-line="86" selection-start-column="93" selection-end-line="86" selection-end-column="93" />
                   <folding>
                     <element signature="e#51#66#0" expanded="true" />
                   </folding>
@@ -106,11 +120,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/StudentManager/test/test_student_info_for_dec2018.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1230">
-                  <caret line="68" column="70" selection-start-line="68" selection-start-column="70" selection-end-line="68" selection-end-column="70" />
+                <state relative-caret-position="160">
+                  <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
                 </state>
               </provider>
             </entry>
@@ -142,6 +156,15 @@
       <find>drObjSel2Days</find>
       <find>drObjSel4DaysM</find>
       <find>student2SelDays</find>
+      <find>T_TH</find>
+      <find>_M_T_W_</find>
+      <find>_M_WE</find>
+      <find>_M_T_W_Wee</find>
+      <find>(tim</find>
+      <find>Alysha</find>
+      <find>for student</find>
+      <find>aiden</find>
+      <find>ceylan</find>
     </findStrings>
     <replaceStrings>
       <replace>(&quot;F&quot;,</replace>
@@ -168,13 +191,13 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
         <option value="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_dec2018.py" />
         <option value="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_nov2018.py" />
-        <option value="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py" />
         <option value="$PROJECT_DIR$/Runners/test/test_student_date_store.py" />
         <option value="$PROJECT_DIR$/Runners/student_date_store.py" />
-        <option value="$PROJECT_DIR$/Runners/studentinfo_date_store.py" />
-        <option value="$PROJECT_DIR$/Runners/test/test_studentinfo_date_store.py" />
-        <option value="$PROJECT_DIR$/StudentManager/student_info.py" />
         <option value="$PROJECT_DIR$/StudentManager/test/test_student_info_for_dec2018.py" />
+        <option value="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py" />
+        <option value="$PROJECT_DIR$/Runners/studentinfo_date_store.py" />
+        <option value="$PROJECT_DIR$/StudentManager/student_info.py" />
+        <option value="$PROJECT_DIR$/Runners/test/test_studentinfo_date_store.py" />
       </list>
     </option>
   </component>
@@ -252,7 +275,7 @@
   <component name="PropertiesComponent">
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -283,61 +306,47 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_student_info_for_dec2018.py">
-    <configuration name="Unittests for test_student_info_for_dec2018.TestDec2018_StudentInfo.test_getStudentNameAndSessionDaysAndDates_unspecified_sessionDates_for_student1DefDays" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests in test_studentinfo_date_store.py">
+    <configuration name="Unittests for test_studentinfo_date_store.TestStudentInfoDateStore.test_putStudentsListIntoDict_student1Nov2018SelDaysMWTHF_student2Nov2018SelDaysTTH" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="HESScheduling" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/StudentManager/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Runners/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_student_info_for_dec2018.TestDec2018_StudentInfo.test_getStudentNameAndSessionDaysAndDates_unspecified_sessionDates_for_student1DefDays&quot;" />
+      <option name="_new_target" value="&quot;test_studentinfo_date_store.TestStudentInfoDateStore.test_putStudentsListIntoDict_student1Nov2018SelDaysMWTHF_student2Nov2018SelDaysTTH&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_student_info_for_dec2018.TestDec2018_StudentInfo.test_getStudentNameAndSessionDaysAndDates_unspecified_sessionDates_for_student1SelDays" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_studentinfo_date_store.TestStudentInfoDateStore.test_putStudentsListIntoDict_student1Nov2018SelDaysMWTHF_student3Nov2018SelDaysM" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="HESScheduling" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/StudentManager/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Runners/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_student_info_for_dec2018.TestDec2018_StudentInfo.test_getStudentNameAndSessionDaysAndDates_unspecified_sessionDates_for_student1SelDays&quot;" />
+      <option name="_new_target" value="&quot;test_studentinfo_date_store.TestStudentInfoDateStore.test_putStudentsListIntoDict_student1Nov2018SelDaysMWTHF_student3Nov2018SelDaysM&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for test_student_info_for_dec2018.TestDec2018_StudentInfo.test_getStudentNameAndSessionDaysAndDates_unspecified_sessionDates_for_student2DefDays" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test_studentinfo_date_store.TestStudentInfoDateStore.test_putStudentsListIntoDict_student3Nov2018SelDaysM" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="HESScheduling" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/StudentManager/test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Runners/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_student_info_for_dec2018.TestDec2018_StudentInfo.test_getStudentNameAndSessionDaysAndDates_unspecified_sessionDates_for_student2DefDays&quot;" />
+      <option name="_new_target" value="&quot;test_studentinfo_date_store.TestStudentInfoDateStore.test_putStudentsListIntoDict_student3Nov2018SelDaysM&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in test_date_retrieve_for_nov2018.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="HESScheduling" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DateManagers/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_nov2018.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Unittests in test_student_info_for_dec2018.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -354,13 +363,27 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in test_studentinfo_date_store.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="HESScheduling" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Runners/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Runners/test/test_studentinfo_date_store.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_studentinfo_date_store.py" />
+        <item itemvalue="Python tests.Unittests for test_studentinfo_date_store.TestStudentInfoDateStore.test_putStudentsListIntoDict_student1Nov2018SelDaysMWTHF_student3Nov2018SelDaysM" />
+        <item itemvalue="Python tests.Unittests for test_studentinfo_date_store.TestStudentInfoDateStore.test_putStudentsListIntoDict_student3Nov2018SelDaysM" />
+        <item itemvalue="Python tests.Unittests for test_studentinfo_date_store.TestStudentInfoDateStore.test_putStudentsListIntoDict_student1Nov2018SelDaysMWTHF_student2Nov2018SelDaysTTH" />
         <item itemvalue="Python tests.Unittests in test_student_info_for_dec2018.py" />
-        <item itemvalue="Python tests.Unittests for test_student_info_for_dec2018.TestDec2018_StudentInfo.test_getStudentNameAndSessionDaysAndDates_unspecified_sessionDates_for_student2DefDays" />
-        <item itemvalue="Python tests.Unittests for test_student_info_for_dec2018.TestDec2018_StudentInfo.test_getStudentNameAndSessionDaysAndDates_unspecified_sessionDates_for_student1SelDays" />
-        <item itemvalue="Python tests.Unittests for test_student_info_for_dec2018.TestDec2018_StudentInfo.test_getStudentNameAndSessionDaysAndDates_unspecified_sessionDates_for_student1DefDays" />
-        <item itemvalue="Python tests.Unittests in test_date_retrieve_for_nov2018.py" />
       </list>
     </recent_temporary>
   </component>
@@ -381,35 +404,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_date_retrieve_for_nov2018_py - 2018.12.03 at 22h 31m 23s.xml">
-      <configuration name="Unittests in test_date_retrieve_for_nov2018.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_student_info_for_dec2018_py - 2018.12.03 at 22h 34m 02s.xml">
+    <history-entry file="Unittests_in_test_student_info_for_dec2018_py - 2018.12.03 at 23h 07m 33s.xml">
       <configuration name="Unittests in test_student_info_for_dec2018.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_date_retrieve_for_nov2018_py - 2018.12.03 at 22h 36m 05s.xml">
-      <configuration name="Unittests in test_date_retrieve_for_nov2018.py" configurationId="tests" />
+    <history-entry file="Unittests_for_test_studentinfo_date_store_TestStudentInfoDateStore_test_putStudentsListIntoDict_student1Nov2018SelDaysMWTHF_student2Nov2018SelDaysTTH - 2018.12.03 at 23h 28m 42s.xml">
+      <configuration name="Unittests for test_studentinfo_date_store.TestStudentInfoDateStore.test_putStudentsListIntoDict_student1Nov2018SelDaysMWTHF_student2Nov2018SelDaysTTH" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_date_retrieve_for_nov2018_py - 2018.12.03 at 22h 37m 11s.xml">
-      <configuration name="Unittests in test_date_retrieve_for_nov2018.py" configurationId="tests" />
+    <history-entry file="Unittests_for_test_studentinfo_date_store_TestStudentInfoDateStore_test_putStudentsListIntoDict_student1Nov2018SelDaysMWTHF_student2Nov2018SelDaysTTH - 2018.12.03 at 23h 29m 15s.xml">
+      <configuration name="Unittests for test_studentinfo_date_store.TestStudentInfoDateStore.test_putStudentsListIntoDict_student1Nov2018SelDaysMWTHF_student2Nov2018SelDaysTTH" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_student_info_for_dec2018_TestDec2018_StudentInfo_test_getStudentNameAndSessionDaysAndDates_unspecified_sessionDates_for_student1DefDays - 2018.12.03 at 23h 04m 05s.xml">
-      <configuration name="Unittests for test_student_info_for_dec2018.TestDec2018_StudentInfo.test_getStudentNameAndSessionDaysAndDates_unspecified_sessionDates_for_student1DefDays" configurationId="tests" />
+    <history-entry file="Unittests_for_test_studentinfo_date_store_TestStudentInfoDateStore_test_putStudentsListIntoDict_student1Nov2018SelDaysMWTHF_student2Nov2018SelDaysTTH - 2018.12.03 at 23h 34m 58s.xml">
+      <configuration name="Unittests for test_studentinfo_date_store.TestStudentInfoDateStore.test_putStudentsListIntoDict_student1Nov2018SelDaysMWTHF_student2Nov2018SelDaysTTH" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_student_info_for_dec2018_TestDec2018_StudentInfo_test_getStudentNameAndSessionDaysAndDates_unspecified_sessionDates_for_student1DefDays - 2018.12.03 at 23h 04m 37s.xml">
-      <configuration name="Unittests for test_student_info_for_dec2018.TestDec2018_StudentInfo.test_getStudentNameAndSessionDaysAndDates_unspecified_sessionDates_for_student1DefDays" configurationId="tests" />
+    <history-entry file="Unittests_for_test_studentinfo_date_store_TestStudentInfoDateStore_test_putStudentsListIntoDict_student1Nov2018SelDaysMWTHF_student2Nov2018SelDaysTTH - 2018.12.03 at 23h 36m 26s.xml">
+      <configuration name="Unittests for test_studentinfo_date_store.TestStudentInfoDateStore.test_putStudentsListIntoDict_student1Nov2018SelDaysMWTHF_student2Nov2018SelDaysTTH" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_student_info_for_dec2018_TestDec2018_StudentInfo_test_getStudentNameAndSessionDaysAndDates_unspecified_sessionDates_for_student1DefDays - 2018.12.03 at 23h 05m 03s.xml">
-      <configuration name="Unittests for test_student_info_for_dec2018.TestDec2018_StudentInfo.test_getStudentNameAndSessionDaysAndDates_unspecified_sessionDates_for_student1DefDays" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_student_info_for_dec2018_TestDec2018_StudentInfo_test_getStudentNameAndSessionDaysAndDates_unspecified_sessionDates_for_student1SelDays - 2018.12.03 at 23h 05m 49s.xml">
-      <configuration name="Unittests for test_student_info_for_dec2018.TestDec2018_StudentInfo.test_getStudentNameAndSessionDaysAndDates_unspecified_sessionDates_for_student1SelDays" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_student_info_for_dec2018_TestDec2018_StudentInfo_test_getStudentNameAndSessionDaysAndDates_unspecified_sessionDates_for_student2DefDays - 2018.12.03 at 23h 06m 19s.xml">
-      <configuration name="Unittests for test_student_info_for_dec2018.TestDec2018_StudentInfo.test_getStudentNameAndSessionDaysAndDates_unspecified_sessionDates_for_student2DefDays" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_student_info_for_dec2018_py - 2018.12.03 at 23h 06m 54s.xml">
+    <history-entry file="Unittests_in_test_student_info_for_dec2018_py - 2018.12.03 at 23h 37m 27s.xml">
       <configuration name="Unittests in test_student_info_for_dec2018.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_studentinfo_date_store_TestStudentInfoDateStore_test_putStudentsListIntoDict_student1Nov2018SelDaysMWTHF_student2Nov2018SelDaysTTH - 2018.12.03 at 23h 37m 37s.xml">
+      <configuration name="Unittests for test_studentinfo_date_store.TestStudentInfoDateStore.test_putStudentsListIntoDict_student1Nov2018SelDaysMWTHF_student2Nov2018SelDaysTTH" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_studentinfo_date_store_TestStudentInfoDateStore_test_putStudentsListIntoDict_student3Nov2018SelDaysM - 2018.12.03 at 23h 40m 11s.xml">
+      <configuration name="Unittests for test_studentinfo_date_store.TestStudentInfoDateStore.test_putStudentsListIntoDict_student3Nov2018SelDaysM" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_studentinfo_date_store_py - 2018.12.03 at 23h 41m 06s.xml">
+      <configuration name="Unittests in test_studentinfo_date_store.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_studentinfo_date_store_TestStudentInfoDateStore_test_putStudentsListIntoDict_student1Nov2018SelDaysMWTHF_student3Nov2018SelDaysM - 2018.12.03 at 23h 42m 09s.xml">
+      <configuration name="Unittests for test_studentinfo_date_store.TestStudentInfoDateStore.test_putStudentsListIntoDict_student1Nov2018SelDaysMWTHF_student3Nov2018SelDaysM" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -483,13 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="153" column="182" selection-start-line="153" selection-start-column="182" selection-end-line="153" selection-end-column="182" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -517,40 +533,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/StudentManager/test/test_student_info_for_dec2018.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Runners/studentinfo_date_store.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        <state relative-caret-position="126">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
           <folding>
             <element signature="e#65#79#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Runners/test/test_studentinfo_date_store.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding>
-            <element signature="e#51#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StudentManager/student_info.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
+        <state relative-caret-position="59">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
           <folding>
             <element signature="e#50#64#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StudentManager/test/test_student_info_for_dec2018.py">
+    <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="68" column="70" selection-start-line="68" selection-start-column="70" selection-end-line="68" selection-end-column="70" />
+        <state relative-caret-position="76">
+          <caret line="53" column="61" selection-start-line="53" selection-end-line="53" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Runners/test/test_studentinfo_date_store.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="86" column="93" selection-start-line="86" selection-start-column="93" selection-end-line="86" selection-end-column="93" />
+          <folding>
+            <element signature="e#51#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
