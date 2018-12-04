@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="464fa40a-d625-4e79-b45a-40291c96f970" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_nov2018.py" beforeDir="false" afterPath="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_nov2018.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,6 +43,15 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_nov2018.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1000">
+                  <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/StudentManager/student_info.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="235">
@@ -56,8 +66,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="157">
-                  <caret line="157" column="38" lean-forward="true" selection-start-line="157" selection-start-column="38" selection-end-line="157" selection-end-column="38" />
+                <state relative-caret-position="137">
+                  <caret line="153" column="182" selection-start-line="153" selection-start-column="182" selection-end-line="153" selection-end-column="182" />
                 </state>
               </provider>
             </entry>
@@ -78,8 +88,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_nov2018.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
-                  <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+                <state relative-caret-position="86">
+                  <caret line="96" column="47" selection-start-line="96" selection-start-column="47" selection-end-line="96" selection-end-column="47" />
                 </state>
               </provider>
             </entry>
@@ -118,6 +128,7 @@
       <find>DEC2018</find>
       <find>drObjSelDays</find>
       <find>drObjSel2Days</find>
+      <find>drObjSel4DaysM</find>
     </findStrings>
     <replaceStrings>
       <replace>(&quot;F&quot;,</replace>
@@ -126,6 +137,7 @@
       <replace>NOV2018</replace>
       <replace>drObjSel1Days</replace>
       <replace>drObjSel2DaysTTH</replace>
+      <replace>drObjSelDaysM</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -143,8 +155,8 @@
         <option value="$PROJECT_DIR$/StudentManager/test/test_student_info_for_dec2018.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
         <option value="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_dec2018.py" />
-        <option value="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py" />
         <option value="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_nov2018.py" />
+        <option value="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py" />
       </list>
     </option>
   </component>
@@ -253,7 +265,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_date_retrieve_for_dec2018.py">
+  <component name="RunManager" selected="Python tests.Unittests in test_date_retrieve_for_nov2018.py">
     <configuration name="student_info" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HESScheduling" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -319,9 +331,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in test_date_retrieve_for_dec2018.py" />
         <item itemvalue="Python tests.Unittests in test_date_retrieve_for_nov2018.py" />
         <item itemvalue="Python tests.Unittests in test_student_info_for_dec2018.py" />
+        <item itemvalue="Python tests.Unittests in test_date_retrieve_for_dec2018.py" />
         <item itemvalue="Python.student_info" />
       </list>
     </recent_temporary>
@@ -343,35 +355,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_date_retrieve_for_nov2018_py - 2018.12.03 at 21h 15m 23s.xml">
-      <configuration name="Unittests in test_date_retrieve_for_nov2018.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_date_retrieve_for_dec2018_py - 2018.12.03 at 21h 21m 58s.xml">
-      <configuration name="Unittests in test_date_retrieve_for_dec2018.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_date_retrieve_for_nov2018_py - 2018.12.03 at 21h 22m 02s.xml">
-      <configuration name="Unittests in test_date_retrieve_for_nov2018.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_date_retrieve_for_nov2018_py - 2018.12.03 at 21h 27m 39s.xml">
-      <configuration name="Unittests in test_date_retrieve_for_nov2018.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_date_retrieve_for_nov2018_py - 2018.12.03 at 21h 28m 42s.xml">
-      <configuration name="Unittests in test_date_retrieve_for_nov2018.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_date_retrieve_for_nov2018_py - 2018.12.03 at 21h 28m 59s.xml">
-      <configuration name="Unittests in test_date_retrieve_for_nov2018.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_date_retrieve_for_nov2018_py - 2018.12.03 at 21h 32m 06s.xml">
-      <configuration name="Unittests in test_date_retrieve_for_nov2018.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_date_retrieve_for_nov2018_py - 2018.12.03 at 21h 32m 26s.xml">
-      <configuration name="Unittests in test_date_retrieve_for_nov2018.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_date_retrieve_for_nov2018_py - 2018.12.03 at 21h 32m 30s.xml">
-      <configuration name="Unittests in test_date_retrieve_for_nov2018.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_date_retrieve_for_dec2018_py - 2018.12.03 at 21h 32m 35s.xml">
       <configuration name="Unittests in test_date_retrieve_for_dec2018.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_date_retrieve_for_nov2018_py - 2018.12.03 at 21h 56m 21s.xml">
+      <configuration name="Unittests in test_date_retrieve_for_nov2018.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_date_retrieve_for_dec2018_py - 2018.12.03 at 21h 56m 25s.xml">
+      <configuration name="Unittests in test_date_retrieve_for_dec2018.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_date_retrieve_for_nov2018_py - 2018.12.03 at 22h 20m 55s.xml">
+      <configuration name="Unittests in test_date_retrieve_for_nov2018.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_date_retrieve_for_nov2018_py - 2018.12.03 at 22h 23m 24s.xml">
+      <configuration name="Unittests in test_date_retrieve_for_nov2018.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_student_info_for_dec2018_py - 2018.12.03 at 22h 24m 57s.xml">
+      <configuration name="Unittests in test_student_info_for_dec2018.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_date_retrieve_for_nov2018_py - 2018.12.03 at 22h 26m 11s.xml">
+      <configuration name="Unittests in test_date_retrieve_for_nov2018.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_date_retrieve_for_nov2018_py - 2018.12.03 at 22h 31m 23s.xml">
+      <configuration name="Unittests in test_date_retrieve_for_nov2018.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_student_info_for_dec2018_py - 2018.12.03 at 22h 34m 02s.xml">
+      <configuration name="Unittests in test_student_info_for_dec2018.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_date_retrieve_for_nov2018_py - 2018.12.03 at 22h 36m 05s.xml">
+      <configuration name="Unittests in test_date_retrieve_for_nov2018.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -387,8 +399,8 @@
     <frame x="30" y="23" width="1250" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49343064" visible="true" weight="0.14971521" />
-      <window_info id="Structure" order="1" sideWeight="0.5065693" side_tool="true" visible="true" weight="0.14971521" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4919708" visible="true" weight="0.14971521" />
+      <window_info id="Structure" order="1" sideWeight="0.5080292" side_tool="true" visible="true" weight="0.14971521" />
       <window_info id="Favorites" order="2" sideWeight="0.50364965" side_tool="true" weight="0.14971521" />
       <window_info active="true" anchor="bottom" id="Python Console" order="0" visible="true" weight="0.329927" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49950543" weight="0.329927" />
@@ -405,6 +417,15 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="setValue">
+      <expression>
+        <expression-string>((3, datetime.date(2018, 11, 1)), (1, datetime.date(2018, 11, 6)), (3, datetime.date(2018, 11, 8)), (1, datetime.date(2018, 11, 13)), (3, datetime.date(2018, 11, 15)), (1, datetime.date(2018, 11, 20)), (3, datetime.date(2018, 11, 22)), (1, datetime.date(2018, 11, 27)), (3, datetime.date(2018, 11, 29)))</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/StudentManager/__init__.py">
@@ -473,17 +494,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py">
+    <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_nov2018.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="157" column="38" lean-forward="true" selection-start-line="157" selection-start-column="38" selection-end-line="157" selection-end-column="38" />
+        <state relative-caret-position="1000">
+          <caret line="71" column="49" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_nov2018.py">
+    <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        <state relative-caret-position="137">
+          <caret line="153" column="182" selection-start-line="153" selection-start-column="182" selection-end-line="153" selection-end-column="182" />
         </state>
       </provider>
     </entry>
