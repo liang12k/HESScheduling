@@ -21,6 +21,9 @@ EXPECTED_SELECT_WEEKDAYS_M_W_F = (0, 2, 3)
 # select days T (1), TH (3)
 EXPECTED_SELECT_WEEKDAYS_T_TH = (1, 3)
 
+# select days M (0)
+EXPECTED_SELECT_WEEKDAYS_T_TH = (0,)
+
 
 # ==== DEC.2018 constants ===================================================
 EXPECTED_DEC2018_DATES = (datetime.date(2018, 12, 1), datetime.date(2018, 12, 2), datetime.date(2018, 12, 3), datetime.date(2018, 12, 4), datetime.date(2018, 12, 5), datetime.date(2018, 12, 6), datetime.date(2018, 12, 7), datetime.date(2018, 12, 8), datetime.date(2018, 12, 9), datetime.date(2018, 12, 10), datetime.date(2018, 12, 11), datetime.date(2018, 12, 12), datetime.date(2018, 12, 13), datetime.date(2018, 12, 14), datetime.date(2018, 12, 15), datetime.date(2018, 12, 16), datetime.date(2018, 12, 17), datetime.date(2018, 12, 18), datetime.date(2018, 12, 19), datetime.date(2018, 12, 20), datetime.date(2018, 12, 21), datetime.date(2018, 12, 22), datetime.date(2018, 12, 23), datetime.date(2018, 12, 24), datetime.date(2018, 12, 25), datetime.date(2018, 12, 26), datetime.date(2018, 12, 27), datetime.date(2018, 12, 28), datetime.date(2018, 12, 29), datetime.date(2018, 12, 30), datetime.date(2018, 12, 31))
@@ -89,6 +92,7 @@ EXPECTED_NOV2018_ALL_DATES_AND_WEEKDAYS = ((3, datetime.date(2018, 11, 1)), (4, 
 EXPECTED_NOV2018_ALL_DATES_AND_WEEKDAYS_WKDAY_ABBREV = (('TH', datetime.date(2018, 11, 1)), ('F', datetime.date(2018, 11, 2)), ('M', datetime.date(2018, 11, 5)), ('T', datetime.date(2018, 11, 6)), ('W', datetime.date(2018, 11, 7)), ('TH', datetime.date(2018, 11, 8)), ('F', datetime.date(2018, 11, 9)), ('M', datetime.date(2018, 11, 12)), ('T', datetime.date(2018, 11, 13)), ('W', datetime.date(2018, 11, 14)), ('TH', datetime.date(2018, 11, 15)), ('F', datetime.date(2018, 11, 16)), ('M', datetime.date(2018, 11, 19)), ('T', datetime.date(2018, 11, 20)), ('W', datetime.date(2018, 11, 21)), ('TH', datetime.date(2018, 11, 22)), ('F', datetime.date(2018, 11, 23)), ('M', datetime.date(2018, 11, 26)), ('T', datetime.date(2018, 11, 27)), ('W', datetime.date(2018, 11, 28)), ('TH', datetime.date(2018, 11, 29)), ('F', datetime.date(2018, 11, 30)))
 
 
+# M, W, TH, F
 EXPECTED_NOV2018_SELECT_DATES_AND_M_W_TH_F_WEEKDAYS = (
     (3, datetime.date(2018, 11, 1)),
  (4, datetime.date(2018, 11, 2)),
@@ -110,6 +114,7 @@ EXPECTED_NOV2018_SELECT_DATES_AND_M_W_TH_F_WEEKDAYS = (
  (4, datetime.date(2018, 11, 30)))
 
 
+# M, W, TH, F
 EXPECTED_NOV2018_SELECT_DATES_AND_M_W_TH_F_WEEKDAYS_WKDAY_ABBREV = (
     ('TH', datetime.date(2018, 11, 1)),
  ('F', datetime.date(2018, 11, 2)),
@@ -129,3 +134,28 @@ EXPECTED_NOV2018_SELECT_DATES_AND_M_W_TH_F_WEEKDAYS_WKDAY_ABBREV = (
  ('W', datetime.date(2018, 11, 28)),
  ('TH', datetime.date(2018, 11, 29)),
  ('F', datetime.date(2018, 11, 30)))
+
+
+# M, W, F
+EXPECTED_NOV2018_SELECT_DATES_AND_M_W_F_WEEKDAYS = (datetime.date(2018, 11, 2), datetime.date(2018, 11, 5), datetime.date(2018, 11, 7), datetime.date(2018, 11, 9), datetime.date(2018, 11, 12), datetime.date(2018, 11, 14), datetime.date(2018, 11, 16), datetime.date(2018, 11, 19), datetime.date(2018, 11, 21), datetime.date(2018, 11, 23), datetime.date(2018, 11, 26), datetime.date(2018, 11, 28), datetime.date(2018, 11, 30))
+
+
+EXPECTED_NOV2018_SELECT_DATES_AND_M_W_F_WEEKDAYS_WKDAY_ABBREV = (('F', datetime.date(2018, 11, 2)), ('M', datetime.date(2018, 11, 5)), ('W', datetime.date(2018, 11, 7)), ('F', datetime.date(2018, 11, 9)), ('M', datetime.date(2018, 11, 12)), ('W', datetime.date(2018, 11, 14)), ('F', datetime.date(2018, 11, 16)), ('M', datetime.date(2018, 11, 19)), ('W', datetime.date(2018, 11, 21)), ('F', datetime.date(2018, 11, 23)), ('M', datetime.date(2018, 11, 26)), ('W', datetime.date(2018, 11, 28)), ('F', datetime.date(2018, 11, 30)))
+
+
+# T, TH
+EXPECTED_NOV2018_SELECT_DATES_AND_T_TH_WEEKDAYS = (datetime.date(2018, 11, 1), datetime.date(2018, 11, 6), datetime.date(2018, 11, 8), datetime.date(2018, 11, 13), datetime.date(2018, 11, 15), datetime.date(2018, 11, 20), datetime.date(2018, 11, 22), datetime.date(2018, 11, 27), datetime.date(2018, 11, 29))
+
+
+EXPECTED_NOV2018_SELECT_DATES_AND_T_TH_WEEKDAYS_WKDAY_ABBREV = (('TH', datetime.date(2018, 11, 1)), ('T', datetime.date(2018, 11, 6)), ('TH', datetime.date(2018, 11, 8)), ('T', datetime.date(2018, 11, 13)), ('TH', datetime.date(2018, 11, 15)), ('T', datetime.date(2018, 11, 20)), ('TH', datetime.date(2018, 11, 22)), ('T', datetime.date(2018, 11, 27)), ('TH', datetime.date(2018, 11, 29)))
+
+
+# M
+EXPECTED_NOV2018_SELECT_DATES_AND_M_WEEKDAYS = (datetime.date(2018, 11, 5), datetime.date(2018, 11, 12), datetime.date(2018, 11, 19), datetime.date(2018, 11, 26))
+
+
+EXPECTED_NOV2018_SELECT_DATES_AND_M_WEEKDAYS_WKDAY_ABBREV = (
+    ('M', datetime.date(2018, 11, 5)),
+ ('M', datetime.date(2018, 11, 12)),
+ ('M', datetime.date(2018, 11, 19)),
+ ('M', datetime.date(2018, 11, 26)))
