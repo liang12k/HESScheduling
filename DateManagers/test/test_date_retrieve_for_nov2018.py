@@ -12,11 +12,11 @@ class TestNov2018_DateRetriever(unittest.TestCase):
     def setUp(self):
         self.month = 11
         self.year = 2018
-        self.selectDays1 = "M,W,TH,F"
-        self.selectDays2 = "T,TH"
+        self.selectDaysMWTHF = "M,W,TH,F"
+        self.selectDaysTTH = "T,TH"
         self.drObjDefault = DateRetriever(self.month, self.year)
-        self.drObjSel1Days = DateRetriever(self.month, self.year, self.selectDays1)
-        self.drObjSel2Days = DateRetriever(self.month, self.year, self.selectDays2)
+        self.drObjSel1DaysMWTHF = DateRetriever(self.month, self.year, self.selectDaysMWTHF)
+        self.drObjSel2DaysTTH = DateRetriever(self.month, self.year, self.selectDaysTTH)
 
     def test_parseSelectDays_no_selectDays_get_full_business_week(self):
         expectedDays = ["M", "T", "W", "TH", "F"]
@@ -24,7 +24,7 @@ class TestNov2018_DateRetriever(unittest.TestCase):
 
     def test_parseSelectDays_entered_selectDays(self):
         expectedDays = ["M", "W", "TH", "F"]
-        self.assertEqual(expectedDays, self.drObjSel1Days.parseSelectDays(self.selectDays1))
+        self.assertEqual(expectedDays, self.drObjSel1DaysMWTHF.parseSelectDays(self.selectDaysMWTHF))
 
     # ========== test NOV.2018 ==========================================
     def test_getAllDatesForMonth_forNOV2018_no_selectDays(self):
@@ -34,7 +34,7 @@ class TestNov2018_DateRetriever(unittest.TestCase):
     def test_getAllDatesForMonth_forNOV2018_with_selectDays_M_W_TH_F(self):
         # gets all the dates using func 'getAllDatesForMonth'
         expectedTuple = EXPECTED_NOV2018_DATES
-        self.assertTupleEqual(expectedTuple, self.drObjSel1Days.getAllDatesForMonth())
+        self.assertTupleEqual(expectedTuple, self.drObjSel1DaysMWTHF.getAllDatesForMonth())
 
     def test_getSelectDaysAsInt_forNOV2018_no_selectDays(self):
         expectedTuple = EXPECTED_ALL_WEEKDAYS
@@ -42,7 +42,7 @@ class TestNov2018_DateRetriever(unittest.TestCase):
 
     def test_getSelectDaysAsInt_forNOV2018_with_selectDays_M_W_TH_F(self):
         expectedTuple = EXPECTED_SELECT_WEEKDAYS_M_W_TH_F
-        self.assertTupleEqual(expectedTuple, self.drObjSel1Days.getSelectDaysAsInt())
+        self.assertTupleEqual(expectedTuple, self.drObjSel1DaysMWTHF.getSelectDaysAsInt())
 
     def test_getDatesForSelectDays_forNOV2018_no_selectDays(self):
         expectedTuple = EXPECTED_NOV2018_ALL_DATES_AND_WEEKDAYS
@@ -50,7 +50,7 @@ class TestNov2018_DateRetriever(unittest.TestCase):
 
     def test_getDatesForSelectDays_forNOV2018_with_selectDays_M_W_TH_F(self):
         expectedTuple = EXPECTED_NOV2018_SELECT_DATES_AND_M_W_TH_F_WEEKDAYS
-        self.assertTupleEqual(expectedTuple, self.drObjSel1Days.getDatesForSelectDays())
+        self.assertTupleEqual(expectedTuple, self.drObjSel1DaysMWTHF.getDatesForSelectDays())
 
     def test_getDatesForSelectDaysInWeekdayAbbrev_forNOV2018_no_selectDays(self):
         expectedTuple = EXPECTED_NOV2018_ALL_DATES_AND_WEEKDAYS_WKDAY_ABBREV
@@ -62,7 +62,7 @@ class TestNov2018_DateRetriever(unittest.TestCase):
         expectedTuple = EXPECTED_NOV2018_SELECT_DATES_AND_M_W_TH_F_WEEKDAYS_WKDAY_ABBREV
         self.assertTupleEqual(
             expectedTuple,
-            self.drObjSel1Days.getDatesForSelectDaysInWeekdayAbbrev()
+            self.drObjSel1DaysMWTHF.getDatesForSelectDaysInWeekdayAbbrev()
         )
 
 

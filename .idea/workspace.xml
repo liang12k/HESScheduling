@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="464fa40a-d625-4e79-b45a-40291c96f970" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_nov2018.py" beforeDir="false" afterPath="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_nov2018.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +56,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="139" column="424" selection-start-line="139" selection-start-column="424" selection-end-line="139" selection-end-column="424" />
+                <state relative-caret-position="157">
+                  <caret line="157" column="38" lean-forward="true" selection-start-line="157" selection-start-column="38" selection-end-line="157" selection-end-column="38" />
                 </state>
               </provider>
             </entry>
@@ -66,7 +66,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_dec2018.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="154">
@@ -75,11 +75,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_nov2018.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="49">
-                  <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+                <state relative-caret-position="108">
+                  <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
                 </state>
               </provider>
             </entry>
@@ -117,6 +117,7 @@
       <find>EXPECTED_SELECT_WEEKDAYS</find>
       <find>DEC2018</find>
       <find>drObjSelDays</find>
+      <find>drObjSel2Days</find>
     </findStrings>
     <replaceStrings>
       <replace>(&quot;F&quot;,</replace>
@@ -124,6 +125,7 @@
       <replace>)</replace>
       <replace>NOV2018</replace>
       <replace>drObjSel1Days</replace>
+      <replace>drObjSel2DaysTTH</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -141,8 +143,8 @@
         <option value="$PROJECT_DIR$/StudentManager/test/test_student_info_for_dec2018.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
         <option value="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_dec2018.py" />
-        <option value="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_nov2018.py" />
         <option value="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py" />
+        <option value="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_nov2018.py" />
       </list>
     </option>
   </component>
@@ -464,13 +466,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_nov2018.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_dec2018.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -480,8 +475,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="139" column="424" selection-start-line="139" selection-start-column="424" selection-end-line="139" selection-end-column="424" />
+        <state relative-caret-position="157">
+          <caret line="157" column="38" lean-forward="true" selection-start-line="157" selection-start-column="38" selection-end-line="157" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DateManagers/test/test_date_retrieve_for_nov2018.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
         </state>
       </provider>
     </entry>
