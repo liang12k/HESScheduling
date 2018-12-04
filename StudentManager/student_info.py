@@ -27,6 +27,9 @@ class StudentInfo(object):
     def getStudentName(self):
         return self.name
 
+    def getStudentNameAndSessionDaysAndDates(self):
+        return (self.getStudentName(), self.getSessionDaysAndDates())
+
 
 if __name__ == "__main__":
     pass
