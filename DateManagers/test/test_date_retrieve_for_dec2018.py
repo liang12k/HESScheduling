@@ -30,6 +30,7 @@ class TestDec2018_DateRetriever(unittest.TestCase):
         self.assertTupleEqual(expectedTuple, self.drObjDefault.getAllDatesForMonth())
 
     def test_getAllDatesForMonth_forDEC2018_with_selectDays_T_TH_F(self):
+        # gets all the dates using func 'getAllDatesForMonth'
         expectedTuple = EXPECTED_DEC2018_DATES
         self.assertTupleEqual(expectedTuple, self.drObjSelDays.getAllDatesForMonth())
 
