@@ -1,14 +1,21 @@
 """
 Description: initial generate caller to get students-session dates into .txt
 """
-from pprint import pprint, pformat
+import logging
 from StudentManager.student_info import StudentInfo
 from Runners.studentinfo_date_store import StudentInfoDateStore
+from DateManagers.test.test_date_retrieve_constants import EXPECTED_ALL_WEEKDAYS_ABBREV
+
+logging.getLogger().setLevel(logging.WARNING)
 
 
 class GenerateStudentSessionDates(object):
     def __init__(self):
+        self.studentList = []
         self.studentDataStoreDict = {}
+        self.month = None
+        self.year = None
+        self.fileName = "%d_%d_HES_sessions.txt"
 
     def getMonthValueInput(self):
         isValidMonthCheck = False
@@ -19,6 +26,7 @@ class GenerateStudentSessionDates(object):
                 isValidMonthCheck = True
             else:
                 print "**ERROR**: %s isn't a valid month - valid month from 1 to 12" % monthVal
+        self.month = monthVal
         return monthVal
 
     def getYearValueInput(self):
@@ -28,10 +36,16 @@ class GenerateStudentSessionDates(object):
             yearVal, yearIsNumberCheck = self.validateNumericalInput(year)
             if not yearIsNumberCheck:
                 print "**ERROR**: %s isn't a valid year" % yearVal
+        self.year = yearVal
         return yearVal
 
     def getStudentNameInput(self):
-        studentName = raw_input("\n enter student name(s): eg - Evelyn \t Benjamin;Zeming \t Tim;Mel;Wes \n")
+        studentNameIsBlank = True
+        while studentNameIsBlank:
+            studentName = raw_input("\n enter student name(s): eg - Evelyn \t Benjamin;Zeming \t Tim;Mel;Wes \n")
+            studentNameIsBlank = studentName.strip() == ""
+            if studentNameIsBlank:
+                print "** blank name entered, please provide a name **"
         return studentName
 
     def getSelectDaysInput(self):
@@ -40,6 +54,8 @@ class GenerateStudentSessionDates(object):
         while not validSelectDays:
             selectDays = raw_input("\n enter session weekdays: eg - M \t W,TH \t T,W,TH \t T,TH,F \n")
             validSelectDays = self.validateWeekdayInput(selectDays)
+            if self.valueIsQuitOrExit(selectDays):
+                break
             if not validSelectDays:
                 print validWeekdaysMsg
         return selectDays
@@ -47,7 +63,7 @@ class GenerateStudentSessionDates(object):
     def validateNumericalInput(self, inputValue):
         isNumerical = True
         try:
-            inputValue = int(self, inputValue)
+            inputValue = int(inputValue)
         except ValueError:
             print "**ERROR**: %s entry isn't numerical" % inputValue
             isNumerical = False
@@ -58,30 +74,66 @@ class GenerateStudentSessionDates(object):
 
     def validateWeekdayInput(self, inputValue):
         inputValueSet = set(inputValue.split(","))
-        validWeekdaysSet = set(["M", "T", "W", "TH", "F"])
+        validWeekdaysSet = set(EXPECTED_ALL_WEEKDAYS_ABBREV)
         return len(inputValueSet.intersection(validWeekdaysSet)) == len(inputValueSet)
+
+    def valueIsQuitOrExit(self, inputValue):
+        isQuitOrExit = str(inputValue).lower() in ("quit", "exit")
+        if isQuitOrExit:
+            print "\n <<<<< exiting program >>>>> \n"
+        return isQuitOrExit
 
     def runToGetStudentInfoAndSessionDates(self):
         print "\n this script will save the student(s) name & session dates for the same month, year \n"
-        studentsList = []
+        print ">> to exit at any time, enter 'quit' or 'exit' as the value w/o the single quotes \n"
 
         monthVal = self.getMonthValueInput()
+        if self.valueIsQuitOrExit(monthVal):
+            return
         yearVal = self.getYearValueInput()
+        if self.valueIsQuitOrExit(yearVal):
+            return
         print "\n will be getting dates for month %d, year %d \n" % (monthVal, yearVal)
 
-        quitLoop = False
-        while not quitLoop:
+        while True:
             studentName = self.getStudentNameInput()
+            if self.valueIsQuitOrExit(studentName):
+                break
             selectDays = self.getSelectDaysInput()
+            if self.valueIsQuitOrExit(selectDays):
+                break
             print "\n will be getting %s days for %s \n" % (selectDays, studentName)
 
             studentObj = StudentInfo(studentName, monthVal, yearVal, selectDays)
-            studentsList.append(studentObj.getStudentNameAndSessionDaysAndDates())
-            for s in studentsList:
-                print "\n student(s) : %s, total session dates retrieved: %d \n" % (s[0], len(s[1]))
-            # print studentsList
+            self.studentList.append(studentObj.getStudentNameAndSessionDaysAndDates())
 
-        self.studentDataStoreDict = StudentInfoDateStore(studentsList).getStudentsDict()
+        print "\n total entered: %d" % len(self.studentList)
+        for s in self.studentList:
+            print "\n student(s) : %s, total session dates retrieved: %d \n" % (s[0], len(s[1]))
+
+        self.writeStudentDatesToFile()
+
+    def writeStudentDatesToFile(self):
+        if not self.studentList:
+            print "\n No student session dates to retrieve, no data to write for"
+            return
+
+        self.fileName = self.fileName % (self.month, self.year)
+        print "attempting to write '%s'" % self.fileName
+
+        convDateToMMDD = lambda z: z.strftime("%m/%d")
+        self.studentDataStoreDict = StudentInfoDateStore(self.studentList).getStudentsDict()
+
+        with open(self.fileName, "w") as f:
+            f.write(self.fileName + " \n-------- \n")
+            for studentName, sessDates in self.studentDataStoreDict.iteritems():
+                f.write("\n%s\n" % studentName)
+                for d in range(0, len(sessDates), 2):
+                    twoDates = sessDates[d:d+2]
+                    twoDates = [(wkday, convDateToMMDD(dt)) for wkday, dt in twoDates]
+                    f.write(str(twoDates) + "\n")
+                print "\n -- wrote %s: %d session dates" % (studentName, len(sessDates))
+        print "\n ** successfully wrote '%s' ** \n" % self.fileName
 
 
 if __name__ == "__main__":

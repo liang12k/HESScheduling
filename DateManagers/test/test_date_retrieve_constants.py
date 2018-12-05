@@ -8,6 +8,8 @@ import datetime
 # ==== WEEKDAY constants ===================================================
 EXPECTED_ALL_WEEKDAYS = (0, 1, 2, 3, 4)  # 5, 6 are weekends
 
+EXPECTED_ALL_WEEKDAYS_ABBREV = ("M", "T", "W", "TH", "F")  # 5, 6 are weekends
+
 
 # select days T (1), TH (3), F (4)
 EXPECTED_SELECT_WEEKDAYS_T_TH_F = (1, 3, 4)
