@@ -2,6 +2,7 @@
 Description: initial generate caller to get students-session dates into .txt
 """
 import logging
+import datetime
 from StudentManager.student_info import StudentInfo
 from Runners.studentinfo_date_store import StudentInfoDateStore
 from DateManagers.test.test_date_retrieve_constants import EXPECTED_ALL_WEEKDAYS_ABBREV
@@ -15,7 +16,7 @@ class GenerateStudentSessionDates(object):
         self.studentDataStoreDict = {}
         self.month = None
         self.year = None
-        self.fileName = "%d_%d_HES_sessions.txt"
+        self.fileName = "%d_%d_HES_sessions_asOf%s.txt"
 
     def getMonthValueInput(self):
         isValidMonthCheck = False
@@ -118,20 +119,23 @@ class GenerateStudentSessionDates(object):
             print "\n No student session dates to retrieve, no data to write for"
             return
 
-        self.fileName = self.fileName % (self.month, self.year)
-        print "attempting to write '%s'" % self.fileName
+        self.fileName = self.fileName % (self.month, self.year, datetime.datetime.now().strftime("%Y_%m_%d_%H-%M-%S"))
+        print "\n attempting to write '%s'" % self.fileName
 
         convDateToMMDD = lambda z: z.strftime("%m/%d")
+        getWkdaysAbbrevSet = lambda w: ",".join(set([wkdy[0] for wkdy in w]))
         self.studentDataStoreDict = StudentInfoDateStore(self.studentList).getStudentsDict()
 
         with open(self.fileName, "w") as f:
             f.write(self.fileName + " \n-------- \n")
             for studentName, sessDates in self.studentDataStoreDict.iteritems():
-                f.write("\n%s\n" % studentName)
+                f.write("\n%s - %s\n" % (studentName, getWkdaysAbbrevSet(sessDates)))
+                f.write("````````````````````````````` \n")
                 for d in range(0, len(sessDates), 2):
                     twoDates = sessDates[d:d+2]
                     twoDates = [(wkday, convDateToMMDD(dt)) for wkday, dt in twoDates]
                     f.write(" - ".join([str(d) for d in twoDates]) + "\n")
+                f.write("\n")
                 print "\n -- wrote %s: %d session dates" % (studentName, len(sessDates))
         print "\n ** successfully wrote '%s' ** \n" % self.fileName
 
