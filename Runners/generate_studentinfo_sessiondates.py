@@ -131,7 +131,7 @@ class GenerateStudentSessionDates(object):
                 for d in range(0, len(sessDates), 2):
                     twoDates = sessDates[d:d+2]
                     twoDates = [(wkday, convDateToMMDD(dt)) for wkday, dt in twoDates]
-                    f.write(str(twoDates) + "\n")
+                    f.write(" - ".join([str(d) for d in twoDates]) + "\n")
                 print "\n -- wrote %s: %d session dates" % (studentName, len(sessDates))
         print "\n ** successfully wrote '%s' ** \n" % self.fileName
 

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="464fa40a-d625-4e79-b45a-40291c96f970" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/DateManagers/test/test_date_retrieve_constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runners/12_2018_HES_sessions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Runners/12_2018_HES_sessions_v1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Runners/generate_studentinfo_sessiondates.py" beforeDir="false" afterPath="$PROJECT_DIR$/Runners/generate_studentinfo_sessiondates.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Runners/generate_studentinfo_sessiondates.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="134" column="38" selection-start-line="134" selection-start-column="38" selection-end-line="134" selection-end-column="38" />
+            <state relative-caret-position="232">
+              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
               <folding>
                 <element signature="e#85#99#0" expanded="true" />
               </folding>
@@ -77,10 +78,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Runners/11_2018_HES_sessions.txt">
+        <entry file="file://$PROJECT_DIR$/Runners/12_2018_HES_sessions_v2.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -432,7 +433,7 @@
     <frame x="30" y="23" width="1250" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49051094" visible="true" weight="0.14971521" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49051094" visible="true" weight="0.14971521" />
       <window_info id="Structure" order="1" sideWeight="0.50948906" side_tool="true" weight="0.14971521" />
       <window_info id="Favorites" order="2" sideWeight="0.50364965" side_tool="true" weight="0.14971521" />
       <window_info anchor="bottom" id="Python Console" order="0" weight="0.329927" />
@@ -440,7 +441,7 @@
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" visible="true" weight="0.329927" />
+      <window_info anchor="bottom" id="Run" order="5" visible="true" weight="0.329927" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -590,10 +591,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Runners/12_2018_HES_sessions_v1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Runners/12_2018_HES_sessions_v2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Runners/generate_studentinfo_sessiondates.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="134" column="38" selection-start-line="134" selection-start-column="38" selection-end-line="134" selection-end-column="38" />
+        <state relative-caret-position="232">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
           <folding>
             <element signature="e#85#99#0" expanded="true" />
           </folding>
