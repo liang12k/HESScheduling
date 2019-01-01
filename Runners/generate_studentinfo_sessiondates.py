@@ -3,6 +3,7 @@ Description: initial generate caller to get students-session dates into .txt
 """
 import logging
 import datetime
+from tabulate import tabulate  # need to pip install
 from StudentManager.student_info import StudentInfo
 from Runners.studentinfo_date_store import StudentInfoDateStore
 from DateManagers.test.test_date_retrieve_constants import EXPECTED_ALL_WEEKDAYS_ABBREV
@@ -16,7 +17,7 @@ class GenerateStudentSessionDates(object):
         self.studentDataStoreDict = {}
         self.month = None
         self.year = None
-        self.fileName = "%d_%d_HES_sessions_asOf%s.txt"
+        self.fileName = "%d_%d_HES_sessions_asOf_%s.txt"
 
     def getMonthValueInput(self):
         isValidMonthCheck = False
@@ -112,13 +113,21 @@ class GenerateStudentSessionDates(object):
         for s in self.studentList:
             print "\n student(s) : %s, total session dates retrieved: %d \n" % (s[0], len(s[1]))
 
-        self.writeStudentDatesToFile()
+        if self.checkStudentListHasValues():
+            self.writeStudentDatesToFile()
 
-    def writeStudentDatesToFile(self):
-        if not self.studentList:
-            print "\n No student session dates to retrieve, no data to write for"
-            return
+    def checkStudentListHasValues(self):
+        if self.studentList:
+            return True
+        print "\n No student session dates to retrieve, no data to write for!"
 
+    def getWkdaysAbbrevSet(self, w):
+        return ",".join(set([wkdy[0] for wkdy in w]))
+
+    def convDateToMMDD(self, d):
+        return d.strftime("%m/%d")
+
+    def writeStudentDatesToFile(self, writeUsingTabulate=True):
         self.fileName = self.fileName % (self.month, self.year, datetime.datetime.now().strftime("%Y_%m_%d_%H-%M-%S"))
         print "\n attempting to write '%s'" % self.fileName
 
@@ -126,8 +135,13 @@ class GenerateStudentSessionDates(object):
         getWkdaysAbbrevSet = lambda w: ",".join(set([wkdy[0] for wkdy in w]))
         self.studentDataStoreDict = StudentInfoDateStore(self.studentList).getStudentsDict()
 
+        if writeUsingTabulate:
+            print "\n ~~ writing %s using tabulate ~~ \n" % self.fileName
+            self.writeStudentDatesToFileUsingTabulate()
+            return
+
         with open(self.fileName, "w") as f:
-            f.write(self.fileName + " \n-------- \n")
+            f.write(self.fileName + " \n" + "--------"*4 + " \n")
             for studentName, sessDates in self.studentDataStoreDict.iteritems():
                 f.write("\n%s - %s\n" % (studentName, getWkdaysAbbrevSet(sessDates)))
                 f.write("````````````````````````````` \n")
@@ -139,7 +153,29 @@ class GenerateStudentSessionDates(object):
                 print "\n -- wrote %s: %d session dates" % (studentName, len(sessDates))
         print "\n ** successfully wrote '%s' ** \n" % self.fileName
 
+    def writeStudentDatesToFileUsingTabulate(self):
+        with open(self.fileName, "w") as f:
+            f.write(self.fileName + " \n" + "--------"*7 + " \n\n")
+            for studentName, sessDates in self.studentDataStoreDict.iteritems():
+                studentInitials = [s[0] for s in studentName.split(";")]
+                studentNameAndWkdays = [studentName + " - " + self.getWkdaysAbbrevSet(sessDates)]
+                headerTitles = studentNameAndWkdays + studentInitials
+                tableData = []
+                for d in range(0, len(sessDates), 2):
+                    twoDates = sessDates[d:d + 2]
+                    twoDates = [(wkday, self.convDateToMMDD(dt)) for wkday, dt in twoDates]
+                    # pool 2 dates together for display & whitespace for checklist per initial
+                    rowData = [" - ".join([str(d) for d in twoDates])]
+                    rowData += [" "]*len(studentInitials)
+                    tableData.append(rowData)
+                # see tbl formats here: https://bitbucket.org/astanin/python-tabulate
+                print tabulate(tableData, headers=headerTitles, tablefmt="presto") + "\n"
+                f.write(tabulate(tableData, headers=headerTitles, tablefmt="presto"))
+                f.write("\n"*3)
+                print "\n -- wrote %s: %d session dates\n\n" % (studentName, len(sessDates))
+        print "\n ** successfully wrote tabulated '%s' ** \n" % self.fileName
+
 
 if __name__ == "__main__":
     GenerateStudentSessionDates().runToGetStudentInfoAndSessionDates()
-    print "end program"
+    print "\n\n ****** end program ****** "
