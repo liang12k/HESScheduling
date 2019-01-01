@@ -18,6 +18,7 @@ class GenerateStudentSessionDates(object):
         self.month = None
         self.year = None
         self.fileName = "%d_%d_HES_sessions_asOf_%s.txt"
+        self.errorMsgPrefix = "*** ERROR *** :"
 
     def getMonthValueInput(self):
         isValidMonthCheck = False
@@ -27,7 +28,7 @@ class GenerateStudentSessionDates(object):
             if monthIsNumber and self.isValidMonth(monthVal):
                 isValidMonthCheck = True
             else:
-                print "**ERROR**: %s isn't a valid month - valid month from 1 to 12" % monthVal
+                print self.errorMsgPrefix + " %s isn't a valid month - valid month from 1 to 12" % monthVal
         self.month = monthVal
         return monthVal
 
@@ -37,7 +38,7 @@ class GenerateStudentSessionDates(object):
             year = raw_input("\n enter a numerical year : \n")
             yearVal, yearIsNumberCheck = self.validateNumericalInput(year)
             if not yearIsNumberCheck:
-                print "**ERROR**: %s isn't a valid year" % yearVal
+                print self.errorMsgPrefix + " %s isn't a valid year" % yearVal
         self.year = yearVal
         return yearVal
 
@@ -67,7 +68,7 @@ class GenerateStudentSessionDates(object):
         try:
             inputValue = int(inputValue)
         except ValueError:
-            print "**ERROR**: %s entry isn't numerical" % inputValue
+            print self.errorMsgPrefix + " %s entry isn't numerical" % inputValue
             isNumerical = False
         return inputValue, isNumerical
 
@@ -109,7 +110,7 @@ class GenerateStudentSessionDates(object):
             studentObj = StudentInfo(studentName, monthVal, yearVal, selectDays)
             self.studentList.append(studentObj.getStudentNameAndSessionDaysAndDates())
 
-        print "\n total entered: %d" % len(self.studentList)
+        print "\n ~~~~ total students entered: %d ~~~~ \n" % len(self.studentList)
         for s in self.studentList:
             print "\n student(s) : %s, total session dates retrieved: %d \n" % (s[0], len(s[1]))
 
@@ -119,7 +120,7 @@ class GenerateStudentSessionDates(object):
     def checkStudentListHasValues(self):
         if self.studentList:
             return True
-        print "\n No student session dates to retrieve, no data to write for!"
+        print "\n No student session dates to retrieve, no data to write for! \n"
 
     def getWkdaysAbbrevSet(self, w):
         return ",".join(set([wkdy[0] for wkdy in w]))
@@ -127,31 +128,14 @@ class GenerateStudentSessionDates(object):
     def convDateToMMDD(self, d):
         return d.strftime("%m/%d")
 
-    def writeStudentDatesToFile(self, writeUsingTabulate=True):
+    def writeStudentDatesToFile(self):
         self.fileName = self.fileName % (self.month, self.year, datetime.datetime.now().strftime("%Y_%m_%d_%H-%M-%S"))
         print "\n attempting to write '%s'" % self.fileName
 
-        convDateToMMDD = lambda z: z.strftime("%m/%d")
-        getWkdaysAbbrevSet = lambda w: ",".join(set([wkdy[0] for wkdy in w]))
         self.studentDataStoreDict = StudentInfoDateStore(self.studentList).getStudentsDict()
 
-        if writeUsingTabulate:
-            print "\n ~~ writing %s using tabulate ~~ \n" % self.fileName
-            self.writeStudentDatesToFileUsingTabulate()
-            return
-
-        with open(self.fileName, "w") as f:
-            f.write(self.fileName + " \n" + "--------"*4 + " \n")
-            for studentName, sessDates in self.studentDataStoreDict.iteritems():
-                f.write("\n%s - %s\n" % (studentName, getWkdaysAbbrevSet(sessDates)))
-                f.write("````````````````````````````` \n")
-                for d in range(0, len(sessDates), 2):
-                    twoDates = sessDates[d:d+2]
-                    twoDates = [(wkday, convDateToMMDD(dt)) for wkday, dt in twoDates]
-                    f.write(" - ".join([str(d) for d in twoDates]) + "\n")
-                f.write("\n")
-                print "\n -- wrote %s: %d session dates" % (studentName, len(sessDates))
-        print "\n ** successfully wrote '%s' ** \n" % self.fileName
+        # print "\n ~~ writing %s using tabulate ~~ \n" % self.fileName
+        self.writeStudentDatesToFileUsingTabulate()
 
     def writeStudentDatesToFileUsingTabulate(self):
         with open(self.fileName, "w") as f:
@@ -169,11 +153,12 @@ class GenerateStudentSessionDates(object):
                     rowData += [" "]*len(studentInitials)
                     tableData.append(rowData)
                 # see tbl formats here: https://bitbucket.org/astanin/python-tabulate
-                print tabulate(tableData, headers=headerTitles, tablefmt="presto") + "\n"
-                f.write(tabulate(tableData, headers=headerTitles, tablefmt="presto"))
+                tabulateData = tabulate(tableData, headers=headerTitles, tablefmt="presto")
+                print tabulateData + "\n"
+                f.write(tabulateData)
                 f.write("\n"*3)
                 print "\n -- wrote %s: %d session dates\n\n" % (studentName, len(sessDates))
-        print "\n ** successfully wrote tabulated '%s' ** \n" % self.fileName
+        print "\n ** successfully wrote tabulated file '%s' ** \n" % self.fileName
 
 
 if __name__ == "__main__":
