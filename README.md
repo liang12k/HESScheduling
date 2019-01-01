@@ -12,6 +12,7 @@ the goal is to have students + their session dates for the Month/Year combinatio
 
 ## TODO: 
 - [ ] determine which days are NYC DOE holidays and put an asterisk
+- [x] add a checklist per each session row for each student
 
 
 ## Modules to install:
